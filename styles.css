@@ -1,1 +1,22 @@
-/*  your css code here. If applicable */
+#container {
+  margin: 20px;
+}
+
+/* Before pseudo-element */
+#container::before {
+  content: "Special Text Before";
+  color: #f00;
+  font-size: 20px;
+  display: block; /* ensures it appears on its own line */
+  margin-bottom: 5px; /* optional spacing */
+}
+
+/* After pseudo-element */
+#container::after {
+  content: "Special Text After";
+  color: #f00;
+  font-size: 20px;
+  display: block; /* ensures it appears on its own line */
+  margin-top: 5px; /* optional spacing */
+}
+
